@@ -9,6 +9,6 @@
     <attr name="total_time" format="integer"/>
     <attr name="gap_time" format="integer"/>
     <attr name="anim_in" format="integer"/>
-    <attr name="anim_out" format="reference"/>
+    <attr name="anim_out" format="integer"/>
   </declare-styleable>
 </resources>

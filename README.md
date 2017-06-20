@@ -32,13 +32,29 @@ compile 'com.mi.widget:xcountdown:1.0.1'
            app:total_time="30" />
 ```
 
+
+**属性说明**
+
+| 属性 | 类型 | 说明 |
+|---|---|---|
+| text_size | dimension | 文字大小 |
+| text_color | color | 文字颜色 |
+| tip_text | String | 倒计时结束后的提示文字,默认文字是："点击重发" |
+| enable_background | reference | 默认背景 |
+| disable_background | reference | 验证码View不可点击时的背景 |
+| total_time | integer | 倒计时总时间，单位 秒 。默认60秒|
+| gap_time | integer | 间隔时间。默认1秒变化一次 |
+| anim_in | integer | 文字进入时动画效果,默认 android.R.anim.fade_in |
+| anim_out | integer | 文字退出后动画效果，默认 android.R.anim.fade_out|
+
+
 ## 3. 实现CountDownView.OnXcountDownClickListener接口
->>> mTvSendCode.setXcountDownListener(this);
+> mTvSendCode.setXcountDownListener(this);
 
 #### onInitSendCode() //第一次点击发送验证码的业务代码处理
 #### onResendCode() //重发验证码处理
 
 ## 4. 发送验证码
 
->>> CountDownView mTvSendCode;
->>> mTvSendCode.start();
+> CountDownView mTvSendCode;
+> mTvSendCode.start();
