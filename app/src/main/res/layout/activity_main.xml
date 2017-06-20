@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp">
+
+    <com.mi.widget.xcountdown.CountDownView
+        android:id="@+id/id_button_green"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        app:disable_background="@drawable/countdown_btn_bg_disable"
+        app:enable_background="@drawable/countdown_btn_bg_normal"
+        app:gap_time="1"
+        app:text_color="@android:color/white"
+        app:text_size="16sp"
+        app:tip_text="重新获取验证码"
+        app:total_time="10" />
+
+    <com.mi.widget.xcountdown.CountDownView
+        android:id="@+id/id_button_yellow"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        app:disable_background="@drawable/shape_bg_accent_disable"
+        app:enable_background="@drawable/shape_bg_accent_normal"
+        app:gap_time="1"
+        app:text_color="@android:color/white"
+        app:text_size="16sp"
+        app:anim_in="@anim/push_bottom_in"
+        app:anim_out="@anim/push_bottom_out"
+        app:tip_text="点击发送"
+        app:total_time="5" />
+
+    <com.mi.widget.xcountdown.CountDownView
+        android:id="@+id/id_button_normal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        app:disable_background="@drawable/countdown_btn_bg_disable"
+        app:enable_background="@drawable/countdown_btn_bg_normal"
+        app:gap_time="1"
+        app:text_color="@android:color/white"
+        app:text_size="16sp"
+        app:tip_text="点击重发"
+        app:total_time="5" />
+
+</LinearLayout>
