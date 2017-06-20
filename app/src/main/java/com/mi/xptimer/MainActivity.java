@@ -9,7 +9,7 @@ import android.widget.Toast;
 import com.mi.widget.xcountdown.CountDownView;
 
 
-public class MainActivity extends AppCompatActivity implements CountDownView.OnXcoundDownClickListener, CountDownView.OnXcoundDownTickListener {
+public class MainActivity extends AppCompatActivity implements CountDownView.OnXcountDownClickListener, CountDownView.OnXcountDownTickListener {
 
     CountDownView mBtnTimerOne;
     CountDownView mBtnTimerTwo;
@@ -37,11 +37,11 @@ public class MainActivity extends AppCompatActivity implements CountDownView.OnX
 
     private void initEvent() {
 
-        mBtnTimerOne.setXcoundDownListener(this);
-        mBtnTimerTwo.setXcoundDownListener(this);
-        mBtnTimerThree.setXcoundDownListener(this);
+        mBtnTimerOne.setXcountDownListener(this);
+        mBtnTimerTwo.setXcountDownListener(this);
+        mBtnTimerThree.setXcountDownListener(this);
 
-        mBtnTimerOne.setXcoundDownTickListener(this);
+        mBtnTimerOne.setXcountDownTickListener(this);
 
         mBtnTimerOne.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements CountDownView.OnX
 
     @Override
     public void onSendCodeTick(long restMills) {
-        String show = restMills / 1000 +"秒后重新发送";
+        String show = restMills / 1000 + "秒后重新发送";
         mBtnTimerOne.setText(show);
 
     }

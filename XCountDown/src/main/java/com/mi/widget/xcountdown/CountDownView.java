@@ -31,8 +31,8 @@ public class CountDownView extends TextSwitcher
     private int bgDisableResId;  //不可点击时的背景
 
     private CountDownTimer timer;
-    private OnXcoundDownClickListener mListener;
-    private OnXcoundDownTickListener mTickListener;
+    private OnXcountDownClickListener mListener;
+    private OnXcountDownTickListener mTickListener;
 
     private boolean countDownFinish; //倒计时是否结束
 
@@ -221,21 +221,21 @@ public class CountDownView extends TextSwitcher
     /**
      * 重新发送验证码
      */
-    public interface OnXcoundDownClickListener {
+    public interface OnXcountDownClickListener {
         void onResendCode(View view);
 
         void onInitSendCode(View view);
     }
 
-    public void setXcoundDownListener(OnXcoundDownClickListener listener) {
+    public void setXcountDownListener(OnXcountDownClickListener listener) {
         this.mListener = listener;
     }
 
-    public interface OnXcoundDownTickListener {
+    public interface OnXcountDownTickListener {
         void onSendCodeTick(long restMills);
     }
 
-    public void setXcoundDownTickListener(OnXcoundDownTickListener tickListener) {
+    public void setXcountDownTickListener(OnXcountDownTickListener tickListener) {
         this.mTickListener = tickListener;
     }
 }

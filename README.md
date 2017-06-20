@@ -16,7 +16,8 @@ compile 'com.mi.widget:xcountdown:1.0.1'
 
 #### 直接在XML文件中设置各属性信息
 
-``` <com.mi.widget.xcountdown.CountDownView
+```
+      <com.mi.widget.xcountdown.CountDownView
            android:id="@+id/id_button_normal"
            android:layout_width="150dp"
            android:layout_height="wrap_content"
@@ -31,7 +32,7 @@ compile 'com.mi.widget:xcountdown:1.0.1'
            app:total_time="30" />
 ```
 
-## 3. 实现CountDownView.OnXcoundDownClickListener接口
+## 3. 实现CountDownView.OnXcountDownClickListener接口
 
 #### onInitSendCode() //第一次点击发送验证码的业务代码处理
 #### onResendCode() //重发验证码处理
