@@ -33,9 +33,12 @@ compile 'com.mi.widget:xcountdown:1.0.1'
 ```
 
 ## 3. 实现CountDownView.OnXcountDownClickListener接口
+>>> mTvSendCode.setXcountDownListener(this);
 
 #### onInitSendCode() //第一次点击发送验证码的业务代码处理
 #### onResendCode() //重发验证码处理
 
-```
-```
+## 4. 发送验证码
+
+>>> CountDownView mTvSendCode;
+>>> mTvSendCode.start();
