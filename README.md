@@ -2,6 +2,7 @@
 android下的简单倒计时组件。
 
 [![License](https://img.shields.io/badge/license-Apache%202-green.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[![Download](https://api.bintray.com/packages/brightmi/maven/xcountdown/images/download.svg) ](https://bintray.com/brightmi/maven/xcountdown/_latestVersion)
 
 
 ## 1. 如何添加
